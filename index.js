@@ -389,11 +389,11 @@
   // Display the initial scene.
   switchScene(scenes[0]);
 
-  function openVideo() {
+  window.openVideo = function() {
   document.getElementById('videoPopup').style.display = 'block';
 }
 
-function closeVideo() {
+window.closeVideo = function() {
   document.getElementById('videoPopup').style.display = 'none';
 }
 
