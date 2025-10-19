@@ -840,6 +840,7 @@ body.view-control-buttons .viewControlButton {
   line-height: 1.5em;
 }
 
+/* ==== Video Popup Overlay ==== */
 #videoPopup {
   position: fixed;
   top: 50%;
@@ -855,6 +856,7 @@ body.view-control-buttons .viewControlButton {
 #videoPopup iframe {
   width: 560px;
   height: 315px;
+  border-radius: 6px;
 }
 
 #videoPopupClose {
@@ -862,5 +864,6 @@ body.view-control-buttons .viewControlButton {
   cursor: pointer;
   text-align: right;
   font-size: 18px;
-  margin-top: 5px;
+  margin-bottom: 8px;
 }
+
