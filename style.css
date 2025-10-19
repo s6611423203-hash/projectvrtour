@@ -828,3 +828,14 @@ body.view-control-buttons .viewControlButton {
 .viewControlButton-6 {
   margin-left: 105px;
 }
+
+/* Custom Info Hotspot Style (Museum Minimal) */
+.info-hotspot .custom-text {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 12px 16px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5em;
+}
