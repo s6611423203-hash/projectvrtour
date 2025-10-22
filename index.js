@@ -332,9 +332,9 @@
     // Place header and text into wrapper element.
     wrapper.appendChild(header);
     wrapper.appendChild(text);
-    // Hide default title and close button as well
-    wrapper.querySelector('.info-hotspot-title-wrapper').style.display = 'none';
-    wrapper.querySelector('.info-hotspot-close-wrapper').style.display = 'none';
+    // // Hide default title and close button as well
+    // wrapper.querySelector('.info-hotspot-title-wrapper').style.display = 'none';
+    // wrapper.querySelector('.info-hotspot-close-wrapper').style.display = 'none';
 
     header.style.display = 'none';
     // Create a modal for the hotspot content to appear on mobile mode.
