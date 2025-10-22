@@ -41,11 +41,11 @@ var APP_DATA = {
         }
       ],
       "infoHotspots": [
-       {
-    "yaw": -0.10,   // ตำแหน่งคร่าว ๆ บนกองทราย (ปรับได้)
+  {
+    "yaw": 0.10,
     "pitch": -0.05,
-    "title": "null",
-    "text": "<div class='video-trigger' onclick='openVideo()'>🎬 ชมพิธีลุยไฟ</div>"
+    "title": "",
+    "text": "<div class='video-trigger' onclick='window.openVideo()'>🎬 ชมพิธีลุยไฟ</div>"
   }
       ]
     },
