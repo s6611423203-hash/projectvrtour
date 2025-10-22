@@ -285,82 +285,68 @@
   }
 
   function createInfoHotspotElement(hotspot) {
+  // Create wrapper element
+  var wrapper = document.createElement('div');
+  wrapper.classList.add('hotspot');
+  wrapper.classList.add('info-hotspot');
 
-    // Create wrapper element to hold icon and tooltip.
-    var wrapper = document.createElement('div');
-    wrapper.classList.add('hotspot');
-    wrapper.classList.add('info-hotspot');
+  // Create hotspot header (แต่เราจะซ่อนทีหลัง)
+  var header = document.createElement('div');
+  header.classList.add('info-hotspot-header');
 
-    // Create hotspot/tooltip header.
-    var header = document.createElement('div');
-    header.classList.add('info-hotspot-header');
+  var iconWrapper = document.createElement('div');
+  iconWrapper.classList.add('info-hotspot-icon-wrapper');
+  var icon = document.createElement('img');
+  icon.src = 'img/info.png';
+  icon.classList.add('info-hotspot-icon');
+  iconWrapper.appendChild(icon);
 
-    // Create image element.
-    var iconWrapper = document.createElement('div');
-    iconWrapper.classList.add('info-hotspot-icon-wrapper');
-    var icon = document.createElement('img');
-    icon.src = 'img/info.png';
-    icon.classList.add('info-hotspot-icon');
-    iconWrapper.appendChild(icon);
+  var titleWrapper = document.createElement('div');
+  titleWrapper.classList.add('info-hotspot-title-wrapper');
+  var title = document.createElement('div');
+  title.classList.add('info-hotspot-title');
+  title.innerHTML = hotspot.title;
+  titleWrapper.appendChild(title);
 
-    // Create title element.
-    var titleWrapper = document.createElement('div');
-    titleWrapper.classList.add('info-hotspot-title-wrapper');
-    var title = document.createElement('div');
-    title.classList.add('info-hotspot-title');
-    title.innerHTML = hotspot.title;
-    titleWrapper.appendChild(title);
+  var closeWrapper = document.createElement('div');
+  closeWrapper.classList.add('info-hotspot-close-wrapper');
+  var closeIcon = document.createElement('img');
+  closeIcon.src = 'img/close.png';
+  closeIcon.classList.add('info-hotspot-close-icon');
+  closeWrapper.appendChild(closeIcon);
 
-    // Create close element.
-    var closeWrapper = document.createElement('div');
-    closeWrapper.classList.add('info-hotspot-close-wrapper');
-    var closeIcon = document.createElement('img');
-    closeIcon.src = 'img/close.png';
-    closeIcon.classList.add('info-hotspot-close-icon');
-    closeWrapper.appendChild(closeIcon);
+  // Combine header
+  header.appendChild(iconWrapper);
+  header.appendChild(titleWrapper);
+  header.appendChild(closeWrapper);
 
-    // Construct header element.
-    header.appendChild(iconWrapper);
-    header.appendChild(titleWrapper);
-    header.appendChild(closeWrapper);
+  // Create main text (เราใช้แทนปุ่ม 🎬)
+  var text = document.createElement('div');
+  text.classList.add('info-hotspot-text');
+  text.innerHTML = hotspot.text;
 
-    // Create text element.
-    var text = document.createElement('div');
-    text.classList.add('info-hotspot-text');
-    text.innerHTML = hotspot.text;
+  // ใส่ header + text
+  wrapper.appendChild(header);
+  wrapper.appendChild(text);
 
-    // Place header and text into wrapper element.
-    wrapper.appendChild(header);
-    wrapper.appendChild(text);
-    // // Hide default title and close button as well
-    // wrapper.querySelector('.info-hotspot-title-wrapper').style.display = 'none';
-    // wrapper.querySelector('.info-hotspot-close-wrapper').style.display = 'none';
-
-    header.style.display = 'none';
-    // Create a modal for the hotspot content to appear on mobile mode.
-    var modal = document.createElement('div');
-    modal.innerHTML = wrapper.innerHTML;
-    modal.classList.add('info-hotspot-modal');
-    document.body.appendChild(modal);
-    modal.style.display = 'none';
-
-    var toggle = function() {
-      wrapper.classList.toggle('visible');
-      modal.classList.toggle('visible');
-    };
-    
-    // Show content when hotspot is clicked.
-    wrapper.querySelector('.info-hotspot-header').addEventListener('click', toggle);
-
-    // Hide content when close icon is clicked.
-    modal.querySelector('.info-hotspot-close-wrapper').addEventListener('click', toggle);
-
-    // Prevent touch and scroll events from reaching the parent element.
-    // This prevents the view control logic from interfering with the hotspot.
-    stopTouchAndScrollEventPropagation(wrapper);
-
-    return wrapper;
+  // 🔥 ซ่อนทุก element ของกล่อง info เดิม
+  header.style.display = 'none';
+  if (wrapper.querySelector('.info-hotspot-title-wrapper')) {
+    wrapper.querySelector('.info-hotspot-title-wrapper').style.display = 'none';
   }
+  if (wrapper.querySelector('.info-hotspot-close-wrapper')) {
+    wrapper.querySelector('.info-hotspot-close-wrapper').style.display = 'none';
+  }
+
+  // ❌ ไม่สร้าง modal, ไม่ใช้ toggle เดิม
+  // ✅ ใช้เฉพาะ hotspot.text ที่เราส่งมาจาก data.js (🎬)
+
+  // ป้องกันไม่ให้ scroll/touch ไปชน panorama
+  stopTouchAndScrollEventPropagation(wrapper);
+
+  return wrapper;
+}
+
 
   // Prevent touch and scroll events from reaching the parent element.
   function stopTouchAndScrollEventPropagation(element, eventList) {
