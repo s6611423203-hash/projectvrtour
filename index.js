@@ -394,7 +394,15 @@
 }
 
 window.closeVideo = function() {
-  document.getElementById('videoPopup').style.display = 'none';
+  var popup = document.getElementById('videoPopup');
+  var iframe = document.getElementById('videoFrame');
+  
+  popup.style.display = 'none';
+  
+  // เทคนิค: ถอด Link ออกแล้วใส่ใหม่เพื่อหยุดวิดีโอ
+  var currentSrc = iframe.src;
+  iframe.src = ''; 
+  iframe.src = currentSrc;
 }
 
 
