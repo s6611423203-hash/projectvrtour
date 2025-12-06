@@ -1,409 +1,247 @@
-/*
- * Copyright 2016 Google Inc. All rights reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-'use strict';
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
 
-(function() {
-  var Marzipano = window.Marzipano;
-  var bowser = window.bowser;
-  var screenfull = window.screenfull;
-  var data = window.APP_DATA;
+<div id="pano"></div>
 
-  // Grab elements from DOM.
-  var panoElement = document.querySelector('#pano');
-  var sceneNameElement = document.querySelector('#titleBar .sceneName');
-  var sceneListElement = document.querySelector('#sceneList');
-  var sceneElements = document.querySelectorAll('#sceneList .scene');
-  var sceneListToggleElement = document.querySelector('#sceneListToggle');
-  var autorotateToggleElement = document.querySelector('#autorotateToggle');
-  var fullscreenToggleElement = document.querySelector('#fullscreenToggle');
+<div id="sceneList">
+  <div class="scenes">
+    <a href="javascript:void(0)" class="scene" data-id="0-p1">
+      <img src="tiles/0-p1/preview.jpg" alt="p1">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="1-p2">
+      <img src="tiles/1-p2/preview.jpg" alt="p2">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="2-p3">
+      <img src="tiles/2-p3/preview.jpg" alt="p3">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="3-p4">
+      <img src="tiles/3-p4/preview.jpg" alt="p4">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="4-p5">
+      <img src="tiles/4-p5/preview.jpg" alt="p5">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="5-p6">
+      <img src="tiles/5-p6/preview.jpg" alt="p6">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="6-p7">
+      <img src="tiles/6-p7/preview.jpg" alt="p7">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="7-p8">
+      <img src="tiles/7-p8/preview.jpg" alt="p8">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="8-p9">
+      <img src="tiles/8-p9/preview.jpg" alt="p9">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="9-p9v1">
+      <img src="tiles/9-p9v1/preview.jpg" alt="p9v1">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="10-p9v2">
+      <img src="tiles/10-p9v2/preview.jpg" alt="p9v2">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="11-p9v4">
+      <img src="tiles/11-p9v4/preview.jpg" alt="p9v4">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="12-p9v5">
+      <img src="tiles/12-p9v5/preview.jpg" alt="p9v5">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="13-p9v6">
+      <img src="tiles/13-p9v6/preview.jpg" alt="p9v6">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="14-p9v7">
+      <img src="tiles/14-p9v7/preview.jpg" alt="p9v7">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="15-p9v8">
+      <img src="tiles/15-p9v8/preview.jpg" alt="p9v8">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="16-p9v9">
+      <img src="tiles/16-p9v9/preview.jpg" alt="p9v9">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="17-p9v10">
+      <img src="tiles/17-p9v10/preview.jpg" alt="p9v10">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="18-p9v11">
+      <img src="tiles/18-p9v11/preview.jpg" alt="p9v11">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="19-p9v12">
+      <img src="tiles/19-p9v12/preview.jpg" alt="p9v12">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="20-p9v13">
+      <img src="tiles/20-p9v13/preview.jpg" alt="p9v13">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="21-p9v14">
+      <img src="tiles/21-p9v14/preview.jpg" alt="p9v14">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="22-p9v15">
+      <img src="tiles/22-p9v15/preview.jpg" alt="p9v15">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="23-p9v16">
+      <img src="tiles/23-p9v16/preview.jpg" alt="p9v16">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="24-p9v17">
+      <img src="tiles/24-p9v17/preview.jpg" alt="p9v17">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="25-p9v18">
+      <img src="tiles/25-p9v18/preview.jpg" alt="p9v18">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="26-p9v19">
+      <img src="tiles/26-p9v19/preview.jpg" alt="p9v19">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="27-p10">
+      <img src="tiles/27-p10/preview.jpg" alt="p10">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="28-p11">
+      <img src="tiles/28-p11/preview.jpg" alt="p11">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="29-p12">
+      <img src="tiles/29-p12/preview.jpg" alt="p12">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="30-p13">
+      <img src="tiles/30-p13/preview.jpg" alt="p13">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="31-p14">
+      <img src="tiles/31-p14/preview.jpg" alt="p14">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="32-p14l">
+      <img src="tiles/32-p14l/preview.jpg" alt="p14l">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="33-p14l1">
+      <img src="tiles/33-p14l1/preview.jpg" alt="p14l1">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="34-p14r">
+      <img src="tiles/34-p14r/preview.jpg" alt="p14r">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="35-p15">
+      <img src="tiles/35-p15/preview.jpg" alt="p15">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="36-p15f">
+      <img src="tiles/36-p15f/preview.jpg" alt="p15f">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="37-p16">
+      <img src="tiles/37-p16/preview.jpg" alt="p16">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="38-p17c">
+      <img src="tiles/38-p17c/preview.jpg" alt="p17c">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="39-p17c1">
+      <img src="tiles/39-p17c1/preview.jpg" alt="p17c1">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="40-p17l">
+      <img src="tiles/40-p17l/preview.jpg" alt="p17l">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="41-p17r">
+      <img src="tiles/41-p17r/preview.jpg" alt="p17r">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="42-p18c1">
+      <img src="tiles/42-p18c1/preview.jpg" alt="p18c1">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="43-p18c2">
+      <img src="tiles/43-p18c2/preview.jpg" alt="p18c2">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="44-p18l">
+      <img src="tiles/44-p18l/preview.jpg" alt="p18l">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="45-p18l1">
+      <img src="tiles/45-p18l1/preview.jpg" alt="p18l1">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="46-p18l2">
+      <img src="tiles/46-p18l2/preview.jpg" alt="p18l2">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="47-p18l3">
+      <img src="tiles/47-p18l3/preview.jpg" alt="p18l3">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="48-p18l4">
+      <img src="tiles/48-p18l4/preview.jpg" alt="p18l4">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="49-p18l5">
+      <img src="tiles/49-p18l5/preview.jpg" alt="p18l5">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="50-p18l6">
+      <img src="tiles/50-p18l6/preview.jpg" alt="p18l6">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="51-p18r">
+      <img src="tiles/51-p18r/preview.jpg" alt="p18r">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="52-p18r1">
+      <img src="tiles/52-p18r1/preview.jpg" alt="p18r1">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="53-p18r2">
+      <img src="tiles/53-p18r2/preview.jpg" alt="p18r2">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="54-p18r3">
+      <img src="tiles/54-p18r3/preview.jpg" alt="p18r3">
+    </a>
+    <a href="javascript:void(0)" class="scene" data-id="55-p18r4">
+      <img src="tiles/55-p18r4/preview.jpg" alt="p18r4">
+    </a>
+  </div>
+</div>
 
-  // Detect desktop or mobile mode.
-  if (window.matchMedia) {
-    var setMode = function() {
-      if (mql.matches) {
-        document.body.classList.remove('desktop');
-        document.body.classList.add('mobile');
-      } else {
-        document.body.classList.remove('mobile');
-        document.body.classList.add('desktop');
-      }
-    };
-    var mql = matchMedia("(max-width: 500px), (max-height: 500px)");
-    setMode();
-    mql.addListener(setMode);
-  } else {
-    document.body.classList.add('desktop');
-  }
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
 
-  // Detect whether we are on a touch device.
-  document.body.classList.add('no-touch');
-  window.addEventListener('touchstart', function() {
-    document.body.classList.remove('no-touch');
-    document.body.classList.add('touch');
-  });
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
 
-  // Use tooltip fallback mode on IE < 11.
-  if (bowser.msie && parseFloat(bowser.version) < 11) {
-    document.body.classList.add('tooltip-fallback');
-  }
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
 
-  // Viewer options.
-  var viewerOpts = {
-    controls: {
-      mouseViewMode: data.settings.mouseViewMode
-    }
-  };
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
 
-  // Initialize viewer.
-  var viewer = new Marzipano.Viewer(panoElement, viewerOpts);
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
 
-  // Create scenes.
-  var scenes = data.scenes.map(function(data) {
-    var urlPrefix = "tiles";
-    var source = Marzipano.ImageUrlSource.fromString(
-      urlPrefix + "/" + data.id + "/{z}/{f}/{y}/{x}.jpg",
-      { cubeMapPreviewUrl: urlPrefix + "/" + data.id + "/preview.jpg" });
-    var geometry = new Marzipano.CubeGeometry(data.levels);
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
 
-    var limiter = Marzipano.RectilinearView.limit.traditional(data.faceSize, 100*Math.PI/180, 120*Math.PI/180);
-    var view = new Marzipano.RectilinearView(data.initialViewParameters, limiter);
+<script src="data.js"></script>
+<script src="index.js"></script>
 
-    var scene = viewer.createScene({
-      source: source,
-      geometry: geometry,
-      view: view,
-      pinFirstLevel: true
-    });
+<!-- Video Popup Overlay -->
+<div id="videoPopup">
+  <div id="videoPopupClose" onclick="closeVideo()">✖ ปิด</div>
+  <iframe 
+    id="videoFrame"
+    src="https://www.youtube.com/embed/fYLTBc_Xtdc"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
 
-    // Create link hotspots.
-    data.linkHotspots.forEach(function(hotspot) {
-      var element = createLinkHotspotElement(hotspot);
-      scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
-    });
-
-    // Create info hotspots.
-    data.infoHotspots.forEach(function(hotspot) {
-      var element = createInfoHotspotElement(hotspot);
-      scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
-    });
-
-    return {
-      data: data,
-      scene: scene,
-      view: view
-    };
-  });
-
-  // Set up autorotate, if enabled.
-  var autorotate = Marzipano.autorotate({
-    yawSpeed: 0.03,
-    targetPitch: 0,
-    targetFov: Math.PI/2
-  });
-  if (data.settings.autorotateEnabled) {
-    autorotateToggleElement.classList.add('enabled');
-  }
-
-  // Set handler for autorotate toggle.
-  autorotateToggleElement.addEventListener('click', toggleAutorotate);
-
-  // Set up fullscreen mode, if supported.
-  if (screenfull.enabled && data.settings.fullscreenButton) {
-    document.body.classList.add('fullscreen-enabled');
-    fullscreenToggleElement.addEventListener('click', function() {
-      screenfull.toggle();
-    });
-    screenfull.on('change', function() {
-      if (screenfull.isFullscreen) {
-        fullscreenToggleElement.classList.add('enabled');
-      } else {
-        fullscreenToggleElement.classList.remove('enabled');
-      }
-    });
-  } else {
-    document.body.classList.add('fullscreen-disabled');
-  }
-
-  // Set handler for scene list toggle.
-  sceneListToggleElement.addEventListener('click', toggleSceneList);
-
-  // Start with the scene list open on desktop.
-  if (!document.body.classList.contains('mobile')) {
-    showSceneList();
-  }
-
-  // Set handler for scene switch.
-  scenes.forEach(function(scene) {
-    var el = document.querySelector('#sceneList .scene[data-id="' + scene.data.id + '"]');
-    el.addEventListener('click', function() {
-      switchScene(scene);
-      // On mobile, hide scene list after selecting a scene.
-      if (document.body.classList.contains('mobile')) {
-        hideSceneList();
-      }
-    });
-  });
-
-  // DOM elements for view controls.
-  var viewUpElement = document.querySelector('#viewUp');
-  var viewDownElement = document.querySelector('#viewDown');
-  var viewLeftElement = document.querySelector('#viewLeft');
-  var viewRightElement = document.querySelector('#viewRight');
-  var viewInElement = document.querySelector('#viewIn');
-  var viewOutElement = document.querySelector('#viewOut');
-
-  // Dynamic parameters for controls.
-  var velocity = 0.7;
-  var friction = 3;
-
-  // Associate view controls with elements.
-  var controls = viewer.controls();
-  controls.registerMethod('upElement',    new Marzipano.ElementPressControlMethod(viewUpElement,     'y', -velocity, friction), true);
-  controls.registerMethod('downElement',  new Marzipano.ElementPressControlMethod(viewDownElement,   'y',  velocity, friction), true);
-  controls.registerMethod('leftElement',  new Marzipano.ElementPressControlMethod(viewLeftElement,   'x', -velocity, friction), true);
-  controls.registerMethod('rightElement', new Marzipano.ElementPressControlMethod(viewRightElement,  'x',  velocity, friction), true);
-  controls.registerMethod('inElement',    new Marzipano.ElementPressControlMethod(viewInElement,  'zoom', -velocity, friction), true);
-  controls.registerMethod('outElement',   new Marzipano.ElementPressControlMethod(viewOutElement, 'zoom',  velocity, friction), true);
-
-  function sanitize(s) {
-    return s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;');
-  }
-
-  function switchScene(scene) {
-    stopAutorotate();
-    scene.view.setParameters(scene.data.initialViewParameters);
-    scene.scene.switchTo();
-    startAutorotate();
-    updateSceneName(scene);
-    updateSceneList(scene);
-  }
-
-  function updateSceneName(scene) {
-    sceneNameElement.innerHTML = sanitize(scene.data.name);
-  }
-
-  function updateSceneList(scene) {
-    for (var i = 0; i < sceneElements.length; i++) {
-      var el = sceneElements[i];
-      if (el.getAttribute('data-id') === scene.data.id) {
-        el.classList.add('current');
-      } else {
-        el.classList.remove('current');
-      }
-    }
-  }
-
-  function showSceneList() {
-    sceneListElement.classList.add('enabled');
-    sceneListToggleElement.classList.add('enabled');
-  }
-
-  function hideSceneList() {
-    sceneListElement.classList.remove('enabled');
-    sceneListToggleElement.classList.remove('enabled');
-  }
-
-  function toggleSceneList() {
-    sceneListElement.classList.toggle('enabled');
-    sceneListToggleElement.classList.toggle('enabled');
-  }
-
-  function startAutorotate() {
-    if (!autorotateToggleElement.classList.contains('enabled')) {
-      return;
-    }
-    viewer.startMovement(autorotate);
-    viewer.setIdleMovement(3000, autorotate);
-  }
-
-  function stopAutorotate() {
-    viewer.stopMovement();
-    viewer.setIdleMovement(Infinity);
-  }
-
-  function toggleAutorotate() {
-    if (autorotateToggleElement.classList.contains('enabled')) {
-      autorotateToggleElement.classList.remove('enabled');
-      stopAutorotate();
-    } else {
-      autorotateToggleElement.classList.add('enabled');
-      startAutorotate();
-    }
-  }
-
-  function createLinkHotspotElement(hotspot) {
-
-    // Create wrapper element to hold icon and tooltip.
-    var wrapper = document.createElement('div');
-    wrapper.classList.add('hotspot');
-    wrapper.classList.add('link-hotspot');
-
-    // Create image element.
-    var icon = document.createElement('img');
-    icon.src = 'img/link.png';
-    icon.classList.add('link-hotspot-icon');
-
-    // Set rotation transform.
-    var transformProperties = [ '-ms-transform', '-webkit-transform', 'transform' ];
-    for (var i = 0; i < transformProperties.length; i++) {
-      var property = transformProperties[i];
-      icon.style[property] = 'rotate(' + hotspot.rotation + 'rad)';
-    }
-
-    // Add click event handler.
-    wrapper.addEventListener('click', function() {
-      switchScene(findSceneById(hotspot.target));
-    });
-
-    // Prevent touch and scroll events from reaching the parent element.
-    // This prevents the view control logic from interfering with the hotspot.
-    stopTouchAndScrollEventPropagation(wrapper);
-
-    // Create tooltip element.
-    var tooltip = document.createElement('div');
-    tooltip.classList.add('hotspot-tooltip');
-    tooltip.classList.add('link-hotspot-tooltip');
-    tooltip.innerHTML = findSceneDataById(hotspot.target).name;
-
-    wrapper.appendChild(icon);
-    wrapper.appendChild(tooltip);
-
-    return wrapper;
-  }
-
-  function createInfoHotspotElement(hotspot) {
-
-    // Create wrapper element to hold icon and tooltip.
-    var wrapper = document.createElement('div');
-    wrapper.classList.add('hotspot');
-    wrapper.classList.add('info-hotspot');
-
-    // Create hotspot/tooltip header.
-    var header = document.createElement('div');
-    header.classList.add('info-hotspot-header');
-
-    // Create image element.
-    var iconWrapper = document.createElement('div');
-    iconWrapper.classList.add('info-hotspot-icon-wrapper');
-    var icon = document.createElement('img');
-    icon.src = 'img/info.png';
-    icon.classList.add('info-hotspot-icon');
-    iconWrapper.appendChild(icon);
-
-    // Create title element.
-    var titleWrapper = document.createElement('div');
-    titleWrapper.classList.add('info-hotspot-title-wrapper');
-    var title = document.createElement('div');
-    title.classList.add('info-hotspot-title');
-    title.innerHTML = hotspot.title;
-    titleWrapper.appendChild(title);
-
-    // Create close element.
-    var closeWrapper = document.createElement('div');
-    closeWrapper.classList.add('info-hotspot-close-wrapper');
-    var closeIcon = document.createElement('img');
-    closeIcon.src = 'img/close.png';
-    closeIcon.classList.add('info-hotspot-close-icon');
-    closeWrapper.appendChild(closeIcon);
-
-    // Construct header element.
-    header.appendChild(iconWrapper);
-    header.appendChild(titleWrapper);
-    header.appendChild(closeWrapper);
-
-    // Create text element.
-    var text = document.createElement('div');
-    text.classList.add('info-hotspot-text');
-    text.innerHTML = hotspot.text;
-
-    // Place header and text into wrapper element.
-    wrapper.appendChild(header);
-    wrapper.appendChild(text);
-
-    // Create a modal for the hotspot content to appear on mobile mode.
-    var modal = document.createElement('div');
-    modal.innerHTML = wrapper.innerHTML;
-    modal.classList.add('info-hotspot-modal');
-    document.body.appendChild(modal);
-
-    var toggle = function() {
-      wrapper.classList.toggle('visible');
-      modal.classList.toggle('visible');
-    };
-
-    // Show content when hotspot is clicked.
-    wrapper.querySelector('.info-hotspot-header').addEventListener('click', toggle);
-
-    // Hide content when close icon is clicked.
-    modal.querySelector('.info-hotspot-close-wrapper').addEventListener('click', toggle);
-
-    // Prevent touch and scroll events from reaching the parent element.
-    // This prevents the view control logic from interfering with the hotspot.
-    stopTouchAndScrollEventPropagation(wrapper);
-
-    return wrapper;
-  }
-
-  // Prevent touch and scroll events from reaching the parent element.
-  function stopTouchAndScrollEventPropagation(element, eventList) {
-    var eventList = [ 'touchstart', 'touchmove', 'touchend', 'touchcancel',
-                      'wheel', 'mousewheel' ];
-    for (var i = 0; i < eventList.length; i++) {
-      element.addEventListener(eventList[i], function(event) {
-        event.stopPropagation();
-      });
-    }
-  }
-
-  function findSceneById(id) {
-    for (var i = 0; i < scenes.length; i++) {
-      if (scenes[i].data.id === id) {
-        return scenes[i];
-      }
-    }
-    return null;
-  }
-
-  function findSceneDataById(id) {
-    for (var i = 0; i < data.scenes.length; i++) {
-      if (data.scenes[i].id === id) {
-        return data.scenes[i];
-      }
-    }
-    return null;
-  }
-
-  // Display the initial scene.
-  switchScene(scenes[0]);
-
-  window.openVideo = function() {
-  document.getElementById('videoPopup').style.display = 'block';
-}
-
-window.closeVideo = function() {
-  var popup = document.getElementById('videoPopup');
-  var iframe = document.getElementById('videoFrame');
   
-  popup.style.display = 'none';
-  
-  // เทคนิค: ถอด Link ออกแล้วใส่ใหม่เพื่อหยุดวิดีโอ
-  var currentSrc = iframe.src;
-  iframe.src = ''; 
-  iframe.src = currentSrc;
-}
-
-
-})();
+</body>
+</html>
