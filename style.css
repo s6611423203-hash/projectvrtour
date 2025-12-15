@@ -948,3 +948,41 @@ body.view-control-buttons .viewControlButton {
 .audioeng-hotspot img {
   /* background-color: #e63946; */
 }
+
+/* --- Video Hotspot Style --- */
+.video-hotspot {
+  width: auto;
+  height: auto;
+  margin-left: -35px;
+  margin-top: -35px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.video-hotspot:hover {
+  transform: scale(1.1);
+  z-index: 100;
+}
+
+.video-hotspot img {
+  width: 70px;
+  height: 70px;
+  background-color: #00adef; /* สีฟ้า */
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 15px; /* ปรับขนาดไอคอนข้างใน */
+  margin-bottom: 5px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.video-label {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+  white-space: nowrap;
+  font-family: sans-serif;
+}
