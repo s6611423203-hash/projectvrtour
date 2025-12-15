@@ -105,13 +105,13 @@
         var element = createAudioHotspotElement(hotspot);
         scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
       });
+      }
       // Create video hotspots. (เพิ่มส่วนนี้)
     if (data.videoHotspots) {
       data.videoHotspots.forEach(function(hotspot) {
         var element = createVideoHotspotElement(hotspot);
         scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
       });
-    }
     }
 
     return {
