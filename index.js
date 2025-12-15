@@ -99,6 +99,13 @@
       var element = createInfoHotspotElement(hotspot);
       scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
     });
+    // Create audio hotspots. (ส่วนที่เพิ่มใหม่)
+    if (data.audioHotspots) {
+      data.audioHotspots.forEach(function(hotspot) {
+        var element = createAudioHotspotElement(hotspot);
+        scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
+      });
+    }
 
     return {
       data: data,
@@ -387,11 +394,8 @@
   }
 
   // Display the initial scene.
-  switchScene(scenes[0]);
-
-  window.openVideo = function() {
-  document.getElementById('videoPopup').style.display = 'block';
-}
+  var startScene = findSceneById('29-p12');
+  switchScene(startScene ? startScene : scenes[0]);
 
 window.closeVideo = function() {
   var popup = document.getElementById('videoPopup');
@@ -405,5 +409,52 @@ window.closeVideo = function() {
   iframe.src = currentSrc;
 }
 
+// ฟังก์ชันสร้างปุ่มเสียง
+  var currentAudio = null; // ตัวแปรเก็บเสียงที่กำลังเล่นอยู่ (เพื่อไม่ให้เสียงตีกัน)
 
+
+  function createAudioHotspotElement(hotspot) {
+    // สร้างกล่องคลุม
+    var wrapper = document.createElement('div');
+    wrapper.classList.add('hotspot');
+    wrapper.classList.add('audio-hotspot');
+
+    // ★ เพิ่มส่วนนี้: เพื่อให้แยกสีปุ่มได้ (ถ้าต้องการ)
+    if (hotspot.extraClass) {
+      wrapper.classList.add(hotspot.extraClass);
+    }
+
+    // สร้างรูปไอคอน
+    var icon = document.createElement('img');
+    icon.src = 'img/sound.png'; 
+    wrapper.appendChild(icon);
+
+    // ★ เพิ่มส่วนนี้: เพื่อให้มีข้อความใต้ปุ่ม
+    if (hotspot.label) {
+      var labelDiv = document.createElement('div');
+      labelDiv.classList.add('audio-label');
+      labelDiv.innerHTML = hotspot.label; 
+      wrapper.appendChild(labelDiv);
+    }
+
+    // เตรียมไฟล์เสียง
+    var audio = new Audio(hotspot.path);
+
+    // เมื่อคลิกที่ไอคอน
+    wrapper.addEventListener('click', function() {
+      if (audio.paused) {
+        if (currentAudio && currentAudio !== audio) {
+          currentAudio.pause();
+          currentAudio.currentTime = 0;
+        }
+        audio.play();
+        currentAudio = audio; 
+      } else {
+        audio.pause(); 
+      }
+    });
+
+    stopTouchAndScrollEventPropagation(wrapper);
+    return wrapper;
+  }
 })();
