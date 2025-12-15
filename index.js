@@ -105,6 +105,13 @@
         var element = createAudioHotspotElement(hotspot);
         scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
       });
+      // Create video hotspots. (เพิ่มส่วนนี้)
+    if (data.videoHotspots) {
+      data.videoHotspots.forEach(function(hotspot) {
+        var element = createVideoHotspotElement(hotspot);
+        scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
+      });
+    }
     }
 
     return {
@@ -189,7 +196,14 @@
     return s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;');
   }
 
-  function switchScene(scene) {
+function switchScene(scene) {
+    // 1. สั่งหยุดเสียงก่อน (สำคัญมาก)
+    if (typeof currentAudio !== 'undefined' && currentAudio) {
+      currentAudio.pause();
+      currentAudio.currentTime = 0;
+    }
+
+    // 2. จากนั้นค่อยสั่งเปลี่ยนฉาก (เอาไว้ชุดเดียวพอครับ)
     stopAutorotate();
     scene.view.setParameters(scene.data.initialViewParameters);
     scene.scene.switchTo();
@@ -457,4 +471,45 @@ window.closeVideo = function() {
     stopTouchAndScrollEventPropagation(wrapper);
     return wrapper;
   }
-})();
+  // ฟังก์ชันสร้างปุ่มวิดีโอ
+  function createVideoHotspotElement(hotspot) {
+    // 1. สร้างกล่อง
+    var wrapper = document.createElement('div');
+    wrapper.classList.add('hotspot');
+    wrapper.classList.add('video-hotspot');
+
+    // 2. สร้างไอคอน
+    var icon = document.createElement('img');
+    icon.src = 'img/video.png'; 
+    wrapper.appendChild(icon);
+
+    // 3. สร้างป้ายข้อความ (ถ้ามี)
+    if (hotspot.label) {
+      var labelDiv = document.createElement('div');
+      labelDiv.classList.add('video-label');
+      labelDiv.innerHTML = hotspot.label;
+      wrapper.appendChild(labelDiv);
+    }
+
+    // 4. ตั้งค่าเมื่อกดปุ่ม (ส่วนที่คุณถาม)
+    wrapper.addEventListener('click', function() {
+      var popup = document.getElementById('videoPopup');
+      var iframe = document.getElementById('videoFrame');
+      
+      // ★ เช็คว่าเป็น Facebook หรือ YouTube
+      if (hotspot.type === 'facebook') {
+        // กรณี Facebook
+        var encodedUrl = encodeURIComponent(hotspot.videoId);
+        iframe.src = "https://www.facebook.com/plugins/video.php?href=" + encodedUrl + "&show_text=false&t=0&autoplay=1";
+      } else {
+        // กรณี YouTube (ค่าปกติ)
+        iframe.src = "https://www.youtube.com/embed/" + hotspot.videoId + "?autoplay=1";
+      }
+      
+      popup.style.display = 'block'; 
+    }); // <--- แก้เป็นแบบนี้ครับ (แค่ }); ก็พอ)
+
+    stopTouchAndScrollEventPropagation(wrapper);
+    return wrapper;
+  }
+  });
