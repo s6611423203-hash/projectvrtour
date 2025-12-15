@@ -903,3 +903,48 @@ body.view-control-buttons .viewControlButton {
 .video-trigger:hover {
   transform: scale(1.05);
 }
+
+/* --- Audio Hotspot Style (Blue Circle Design) --- */
+.audio-hotspot {
+  width: auto;
+  height: auto;
+  margin-left: -35px;
+  margin-top: -35px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column; /* เรียงแนวตั้ง */
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.audio-hotspot:hover {
+  transform: scale(1.1);
+  z-index: 100;
+}
+
+.audio-hotspot img {
+  width: 70px;            /* ขนาดวงกลม */
+  height: 70px;
+  background-color: #00adef; /* สีฟ้า */
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 12px;
+  margin-bottom: 5px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.audio-label {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+  white-space: nowrap;
+  font-family: sans-serif;
+  /* เอาพื้นหลังดำออกตามที่คุณขอ */
+  background: none; 
+}
+
+/* (เผื่อใช้) สีสำหรับปุ่ม Eng ถ้าอยากแยกสี */
+.audioeng-hotspot img {
+  /* background-color: #e63946; */
+}
