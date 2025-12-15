@@ -414,6 +414,7 @@ var APP_DATA = {
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
+        { "yaw": 3.0354119672860715,"pitch": 0.007003847175248268,"rotation": 0,"target": "15-p9v8" },
         { "yaw": 1.5485982314619378, "pitch": 0.038491227125394545, "rotation": 0, "target": "19-p9v12" },
         { "yaw": -1.5562565032080116, "pitch": 0.010521679216502378, "rotation": 0, "target": "17-p9v10" }
       ],
@@ -529,6 +530,12 @@ var APP_DATA = {
           "target": "9-p9v1"
         },
         {
+          "yaw": -1.6099040395223128,
+          "pitch": 0.021926957412102155,
+          "rotation": 0,
+          "target": "10-p9v2"
+        },
+        {
           "yaw": 2.6660024384742016,
           "pitch": 0.09777694204800369,
           "rotation": 0,
@@ -619,8 +626,8 @@ var APP_DATA = {
       ],
       "faceSize": 3000,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
+        "pitch": -0.0317464415897355,
+        "yaw": -0.046032915431164056,
         "fov": 1.5707963267948966
       },
       "linkHotspots": [
@@ -635,6 +642,25 @@ var APP_DATA = {
           "pitch": -0.22975974133187194,
           "rotation": 0,
           "target": "30-p13"
+        }
+      ],
+      "audioHotspots": [
+        // --- ปุ่มที่ 1: Thai Version (ค่าใหม่) ---
+        {
+          "yaw": -0.9353544708837571, 
+          "pitch": 0.18797719068662389,
+          "path": "audio/บรรยาย.wav",       // อย่าลืมเช็คชื่อไฟล์เสียงให้ตรงนะครับ
+          "label": "Thai Version",
+          "extraClass": "audiothai-hotspot"
+        },
+
+        // --- ปุ่มที่ 2: English Version (ค่าใหม่) ---
+        {
+          "yaw": 0.8259809482991596,
+          "pitch": 0.1588309476964671,
+          "path": "audio/Tha_Ruea_Shrine.wav",    // อย่าลืมเช็คชื่อไฟล์เสียงให้ตรงนะครับ
+          "label": "English Version",
+          "extraClass": "audioeng-hotspot"
         }
       ],
       "infoHotspots": []
