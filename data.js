@@ -3,11 +3,13 @@ var APP_DATA = {
     {
       "id": "0-p1",
       "name": "p1",
-      "levels": [
-
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -29,11 +31,13 @@ var APP_DATA = {
     {
       "id": "1-p2",
       "name": "p2",
-      "levels": [
-
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -45,11 +49,13 @@ var APP_DATA = {
     {
       "id": "2-p3",
       "name": "p3",
-      "levels": [
-
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -61,11 +67,13 @@ var APP_DATA = {
     {
       "id": "3-p4",
       "name": "p4",
-      "levels": [
-
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -84,11 +92,13 @@ var APP_DATA = {
     {
       "id": "4-p5",
       "name": "p5",
-      "levels": [
-
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -100,11 +110,13 @@ var APP_DATA = {
     {
       "id": "5-p6",
       "name": "p6",
-      "levels": [
-
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -116,11 +128,13 @@ var APP_DATA = {
     {
       "id": "6-p7",
       "name": "p7",
-      "levels": [
-
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -131,11 +145,13 @@ var APP_DATA = {
     {
       "id": "7-p8",
       "name": "p8",
-      "levels": [
-
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -147,11 +163,13 @@ var APP_DATA = {
     {
       "id": "8-p9",
       "name": "p9",
-      "levels": [
-
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -164,11 +182,13 @@ var APP_DATA = {
     {
       "id": "9-p9v1",
       "name": "p9v1",
-      "levels": [
-
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -181,11 +201,13 @@ var APP_DATA = {
     {
       "id": "10-p9v2",
       "name": "p9v2",
-      "levels": [
-
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -198,11 +220,13 @@ var APP_DATA = {
     {
       "id": "11-p9v4",
       "name": "p9v4",
-      "levels": [
-
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -215,11 +239,13 @@ var APP_DATA = {
     {
       "id": "12-p9v5",
       "name": "p9v5",
-      "levels": [
-
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -231,11 +257,13 @@ var APP_DATA = {
     {
       "id": "13-p9v6",
       "name": "p9v6",
-      "levels": [
-
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -248,11 +276,13 @@ var APP_DATA = {
     {
       "id": "14-p9v7",
       "name": "p9v7",
-      "levels": [
-
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -265,11 +295,13 @@ var APP_DATA = {
     {
       "id": "15-p9v8",
       "name": "p9v8",
-      "levels": [
-
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -282,11 +314,13 @@ var APP_DATA = {
     {
       "id": "16-p9v9",
       "name": "p9v9",
-      "levels": [
-
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -299,11 +333,13 @@ var APP_DATA = {
     {
       "id": "17-p9v10",
       "name": "p9v10",
-      "levels": [
-
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -315,11 +351,13 @@ var APP_DATA = {
     {
       "id": "18-p9v11",
       "name": "p9v11",
-      "levels": [
-
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -332,11 +370,13 @@ var APP_DATA = {
     {
       "id": "19-p9v12",
       "name": "p9v12",
-      "levels": [
-
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -348,11 +388,13 @@ var APP_DATA = {
     {
       "id": "20-p9v13",
       "name": "p9v13",
-      "levels": [
-
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -366,11 +408,13 @@ var APP_DATA = {
     {
       "id": "22-p9v15",
       "name": "p9v15",
-      "levels": [
-
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -383,11 +427,13 @@ var APP_DATA = {
     {
       "id": "23-p9v16",
       "name": "p9v16",
-      "levels": [
-
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -399,11 +445,13 @@ var APP_DATA = {
     {
       "id": "24-p9v17",
       "name": "p9v17",
-      "levels": [
-
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -414,11 +462,13 @@ var APP_DATA = {
     {
       "id": "25-p9v18",
       "name": "p9v18",
-      "levels": [
-
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -430,11 +480,13 @@ var APP_DATA = {
     {
       "id": "26-p9v19",
       "name": "p9v19",
-      "levels": [
-
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -445,11 +497,13 @@ var APP_DATA = {
     {
       "id": "27-p10",
       "name": "p10",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -487,11 +541,13 @@ var APP_DATA = {
     {
       "id": "28-p11",
       "name": "p11",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -517,11 +573,13 @@ var APP_DATA = {
     {
       "id": "29-p12",
       "name": "p12",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": -0.0317464415897355,
@@ -566,11 +624,13 @@ var APP_DATA = {
     {
       "id": "30-p13",
       "name": "p13",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -602,11 +662,13 @@ var APP_DATA = {
     {
       "id": "31-p14",
       "name": "p14",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -638,11 +700,13 @@ var APP_DATA = {
     {
       "id": "32-p14l",
       "name": "p14l",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -674,11 +738,13 @@ var APP_DATA = {
     {
       "id": "33-p14l1",
       "name": "p14l1",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -698,11 +764,13 @@ var APP_DATA = {
     {
       "id": "34-p14r",
       "name": "p14r",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -728,11 +796,13 @@ var APP_DATA = {
     {
       "id": "35-p15",
       "name": "p15",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -764,11 +834,13 @@ var APP_DATA = {
     {
       "id": "36-p15f",
       "name": "p15f",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -788,11 +860,13 @@ var APP_DATA = {
     {
       "id": "37-p16",
       "name": "p16",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -818,11 +892,13 @@ var APP_DATA = {
     {
       "id": "38-p17c",
       "name": "p17c",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -854,11 +930,13 @@ var APP_DATA = {
     {
       "id": "39-p17c1",
       "name": "p17c1",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -890,11 +968,13 @@ var APP_DATA = {
     {
       "id": "40-p17l",
       "name": "p17l",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -926,11 +1006,13 @@ var APP_DATA = {
     {
       "id": "41-p17r",
       "name": "p17r",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -962,11 +1044,13 @@ var APP_DATA = {
     {
       "id": "42-p18c1",
       "name": "p18c1",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -1004,11 +1088,13 @@ var APP_DATA = {
     {
       "id": "43-p18c2",
       "name": "p18c2",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -1034,11 +1120,13 @@ var APP_DATA = {
     {
       "id": "44-p18l",
       "name": "p18l",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -1082,11 +1170,13 @@ var APP_DATA = {
     {
       "id": "45-p18l1",
       "name": "p18l1",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -1148,11 +1238,13 @@ var APP_DATA = {
     {
       "id": "46-p18l2",
       "name": "p18l2",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -1184,11 +1276,13 @@ var APP_DATA = {
     {
       "id": "47-p18l3",
       "name": "p18l3",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -1220,11 +1314,13 @@ var APP_DATA = {
     {
       "id": "48-p18l4",
       "name": "p18l4",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -1250,11 +1346,13 @@ var APP_DATA = {
     {
       "id": "49-p18l5",
       "name": "p18l5",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -1298,11 +1396,13 @@ var APP_DATA = {
     {
       "id": "50-p18l6",
       "name": "p18l6",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -1328,11 +1428,13 @@ var APP_DATA = {
     {
       "id": "51-p18r",
       "name": "p18r",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -1382,11 +1484,13 @@ var APP_DATA = {
     {
       "id": "52-p18r1",
       "name": "p18r1",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -1424,11 +1528,13 @@ var APP_DATA = {
     {
       "id": "53-p18r2",
       "name": "p18r2",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -1478,11 +1584,13 @@ var APP_DATA = {
     {
       "id": "54-p18r3",
       "name": "p18r3",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -1520,11 +1628,13 @@ var APP_DATA = {
     {
       "id": "55-p18r4",
       "name": "p18r4",
-      "levels": [
-        
-{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
-         { "tileSize": 512, "size": 2048 },
-         { "tileSize": 512, "size": 4096 }],
+"levels": [
+        { "tileSize": 256, "size": 256, "fallbackOnly": true }, // โหลดอันนี้ก่อน (เล็ก/เบลอ)
+        { "tileSize": 512, "size": 512 },
+        { "tileSize": 512, "size": 1024 },
+        { "tileSize": 512, "size": 2048 },
+        { "tileSize": 512, "size": 4096 }
+      ],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
