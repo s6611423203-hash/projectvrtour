@@ -5,8 +5,9 @@ var APP_DATA = {
       "name": "p1",
       "levels": [
 
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -30,8 +31,9 @@ var APP_DATA = {
       "name": "p2",
       "levels": [
 
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -45,8 +47,9 @@ var APP_DATA = {
       "name": "p3",
       "levels": [
 
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -60,8 +63,9 @@ var APP_DATA = {
       "name": "p4",
       "levels": [
 
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -82,8 +86,9 @@ var APP_DATA = {
       "name": "p5",
       "levels": [
 
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -97,8 +102,9 @@ var APP_DATA = {
       "name": "p6",
       "levels": [
 
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -112,8 +118,9 @@ var APP_DATA = {
       "name": "p7",
       "levels": [
 
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -126,8 +133,9 @@ var APP_DATA = {
       "name": "p8",
       "levels": [
 
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -141,8 +149,9 @@ var APP_DATA = {
       "name": "p9",
       "levels": [
 
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -157,8 +166,9 @@ var APP_DATA = {
       "name": "p9v1",
       "levels": [
 
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -173,8 +183,9 @@ var APP_DATA = {
       "name": "p9v2",
       "levels": [
 
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -189,8 +200,9 @@ var APP_DATA = {
       "name": "p9v4",
       "levels": [
 
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -205,8 +217,9 @@ var APP_DATA = {
       "name": "p9v5",
       "levels": [
 
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -220,8 +233,9 @@ var APP_DATA = {
       "name": "p9v6",
       "levels": [
 
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -236,8 +250,9 @@ var APP_DATA = {
       "name": "p9v7",
       "levels": [
 
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -252,8 +267,9 @@ var APP_DATA = {
       "name": "p9v8",
       "levels": [
 
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -268,8 +284,9 @@ var APP_DATA = {
       "name": "p9v9",
       "levels": [
 
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -284,8 +301,9 @@ var APP_DATA = {
       "name": "p9v10",
       "levels": [
 
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -299,8 +317,9 @@ var APP_DATA = {
       "name": "p9v11",
       "levels": [
 
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -315,8 +334,9 @@ var APP_DATA = {
       "name": "p9v12",
       "levels": [
 
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -330,8 +350,9 @@ var APP_DATA = {
       "name": "p9v13",
       "levels": [
 
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -347,8 +368,9 @@ var APP_DATA = {
       "name": "p9v15",
       "levels": [
 
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -363,8 +385,9 @@ var APP_DATA = {
       "name": "p9v16",
       "levels": [
 
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -378,8 +401,9 @@ var APP_DATA = {
       "name": "p9v17",
       "levels": [
 
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -392,8 +416,9 @@ var APP_DATA = {
       "name": "p9v18",
       "levels": [
 
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -407,8 +432,9 @@ var APP_DATA = {
       "name": "p9v19",
       "levels": [
 
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": { "pitch": 0, "yaw": 0, "fov": 1.5707963267948966 },
       "linkHotspots": [
@@ -421,8 +447,9 @@ var APP_DATA = {
       "name": "p10",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -462,8 +489,9 @@ var APP_DATA = {
       "name": "p11",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -491,8 +519,9 @@ var APP_DATA = {
       "name": "p12",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": -0.0317464415897355,
@@ -539,8 +568,9 @@ var APP_DATA = {
       "name": "p13",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -574,8 +604,9 @@ var APP_DATA = {
       "name": "p14",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -609,8 +640,9 @@ var APP_DATA = {
       "name": "p14l",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -644,8 +676,9 @@ var APP_DATA = {
       "name": "p14l1",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -667,8 +700,9 @@ var APP_DATA = {
       "name": "p14r",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -696,8 +730,9 @@ var APP_DATA = {
       "name": "p15",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -731,8 +766,9 @@ var APP_DATA = {
       "name": "p15f",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -754,8 +790,9 @@ var APP_DATA = {
       "name": "p16",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -783,8 +820,9 @@ var APP_DATA = {
       "name": "p17c",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -818,8 +856,9 @@ var APP_DATA = {
       "name": "p17c1",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -853,8 +892,9 @@ var APP_DATA = {
       "name": "p17l",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -888,8 +928,9 @@ var APP_DATA = {
       "name": "p17r",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -923,8 +964,9 @@ var APP_DATA = {
       "name": "p18c1",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -964,8 +1006,9 @@ var APP_DATA = {
       "name": "p18c2",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -993,8 +1036,9 @@ var APP_DATA = {
       "name": "p18l",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -1040,8 +1084,9 @@ var APP_DATA = {
       "name": "p18l1",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -1105,8 +1150,9 @@ var APP_DATA = {
       "name": "p18l2",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -1140,8 +1186,9 @@ var APP_DATA = {
       "name": "p18l3",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -1175,8 +1222,9 @@ var APP_DATA = {
       "name": "p18l4",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -1204,8 +1252,9 @@ var APP_DATA = {
       "name": "p18l5",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -1251,8 +1300,9 @@ var APP_DATA = {
       "name": "p18l6",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -1280,8 +1330,9 @@ var APP_DATA = {
       "name": "p18r",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -1333,8 +1384,9 @@ var APP_DATA = {
       "name": "p18r1",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -1374,8 +1426,9 @@ var APP_DATA = {
       "name": "p18r2",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -1427,8 +1480,9 @@ var APP_DATA = {
       "name": "p18r3",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
@@ -1468,8 +1522,9 @@ var APP_DATA = {
       "name": "p18r4",
       "levels": [
         
-         { "tileSize": 512, "size": 2048, "fallbackOnly": true },
-         { "tileSize": 512, "size": 4096 }      ],
+{ "tileSize": 512, "size": 1024, "fallbackOnly": true },
+         { "tileSize": 512, "size": 2048 },
+         { "tileSize": 512, "size": 4096 }],
       "faceSize": 3000,
       "initialViewParameters": {
         "pitch": 0,
