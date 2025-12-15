@@ -471,7 +471,7 @@ window.closeVideo = function() {
     stopTouchAndScrollEventPropagation(wrapper);
     return wrapper;
   }
-  // ฟังก์ชันสร้างปุ่มวิดีโอ
+  // ฟังก์ชันสร้างปุ่มวิดีโอ (ฉบับสมบูรณ์: รองรับเวลาเริ่ม Start Time)
   function createVideoHotspotElement(hotspot) {
     // 1. สร้างกล่อง
     var wrapper = document.createElement('div');
@@ -491,25 +491,28 @@ window.closeVideo = function() {
       wrapper.appendChild(labelDiv);
     }
 
-    // 4. ตั้งค่าเมื่อกดปุ่ม (ส่วนที่คุณถาม)
+    // 4. ตั้งค่าเมื่อกดปุ่ม (รวมโค้ด startTime เข้ามาไว้ในนี้แล้ว)
     wrapper.addEventListener('click', function() {
       var popup = document.getElementById('videoPopup');
       var iframe = document.getElementById('videoFrame');
       
-      // ★ เช็คว่าเป็น Facebook หรือ YouTube
+      // กำหนดเวลาเริ่ม (ถ้าไม่มีให้เริ่มที่ 0)
+      var startTime = hotspot.startTime || 0; 
+
+      // เช็คว่าเป็น Facebook หรือ YouTube
       if (hotspot.type === 'facebook') {
-        // กรณี Facebook
         var encodedUrl = encodeURIComponent(hotspot.videoId);
-        iframe.src = "https://www.facebook.com/plugins/video.php?href=" + encodedUrl + "&show_text=false&t=0&autoplay=1";
+        iframe.src = "https://www.facebook.com/plugins/video.php?href=" + encodedUrl + "&show_text=false&t=" + startTime + "&autoplay=1";
       } else {
-        // กรณี YouTube (ค่าปกติ)
-        iframe.src = "https://www.youtube.com/embed/" + hotspot.videoId + "?autoplay=1";
+        // กรณี YouTube (เพิ่ม &start=startTime)
+        iframe.src = "https://www.youtube.com/embed/" + hotspot.videoId + "?autoplay=1&start=" + startTime;
       }
       
       popup.style.display = 'block'; 
-    }); // <--- แก้เป็นแบบนี้ครับ (แค่ }); ก็พอ)
+    });
 
     stopTouchAndScrollEventPropagation(wrapper);
     return wrapper;
   }
-  })();
+
+})(); // <--- ปิดท้ายไฟล์ตรงนี้ (ห้ามมีอะไรต่อท้ายแล้ว)
