@@ -18,18 +18,13 @@ var APP_DATA = {
       "infoHotspots": [],
 
       "videoHotspots": [
-        // {
-        //   "yaw": 0.10,
-        //   "pitch": -0.05,
-        //   "videoId": "fYLTBc_Xtdc",  // ใส่ ID ของคลิป YouTube ที่ต้องการ
-        //   "label": "พิธีลุยไฟ"
-        // },
         {
-          "yaw": 0.10,          // ปรับตำแหน่งตามต้องการ
+          "yaw": 0.10,
           "pitch": -0.05,
-          "type": "facebook",   // ★ อย่าลืมบรรทัดนี้
-          "videoId": "https://www.facebook.com/reel/2764510017077801", // ใส่ลิงก์เต็มๆ ตรงนี้
-          "label": "พิธีลุยไฟ"
+          "type": "youtube",   // เปลี่ยนกลับเป็น youtube
+          "videoId": "MbHNND2-cJ8",  // ใส่ ID ของ YouTube อันเดิมของคุณ
+          "label": "ชมพิธีลุยไฟ",
+          "startTime": 701  // ★ (11x60)+41 = 701 วินาที
         }
       ],
     },
