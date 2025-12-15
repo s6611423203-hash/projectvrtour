@@ -420,7 +420,6 @@ window.closeVideo = function() {
   // เทคนิค: ถอด Link ออกแล้วใส่ใหม่เพื่อหยุดวิดีโอ
   var currentSrc = iframe.src;
   iframe.src = ''; 
-  iframe.src = currentSrc;
 }
 
 // ฟังก์ชันสร้างปุ่มเสียง
@@ -515,4 +514,4 @@ window.closeVideo = function() {
     return wrapper;
   }
 
-})(); // <--- ปิดท้ายไฟล์ตรงนี้ (ห้ามมีอะไรต่อท้ายแล้ว)
+})(); 
