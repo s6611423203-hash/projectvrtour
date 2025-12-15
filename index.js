@@ -512,4 +512,4 @@ window.closeVideo = function() {
     stopTouchAndScrollEventPropagation(wrapper);
     return wrapper;
   }
-  });
+  })();
