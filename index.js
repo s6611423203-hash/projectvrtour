@@ -415,11 +415,13 @@ window.closeVideo = function() {
   var popup = document.getElementById('videoPopup');
   var iframe = document.getElementById('videoFrame');
   
+  // 1. ซ่อน Popup
   popup.style.display = 'none';
   
-  // เทคนิค: ถอด Link ออกแล้วใส่ใหม่เพื่อหยุดวิดีโอ
-  var currentSrc = iframe.src;
+  // 2. ล้างค่า src ทิ้งไปเลย (เสียงจะดับทันที)
   iframe.src = ''; 
+  
+  // ⚠️ อย่าใส่บรรทัด iframe.src = currentSrc; กลับมาอีกนะครับ
 }
 
 // ฟังก์ชันสร้างปุ่มเสียง
