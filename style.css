@@ -1019,7 +1019,7 @@ body.view-control-buttons .viewControlButton {
 /* 4. ปรับพื้นหลังแถบด้านล่างให้ดูเนียนตา (เสริม) */
 #sceneList .scenes {
   width: 100%;
-  background-color: rgba(58,68,84, 0.8); /* สีพื้นหลัง */
+  background-color: rgba(0, 0, 0, 0.85); /* สีพื้นหลัง */
 }
 
 /* =========================================
