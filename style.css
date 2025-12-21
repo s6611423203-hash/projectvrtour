@@ -268,7 +268,7 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   background-color: rgba(58,68,84,0.85);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* <--- แก้เป็นคำนี้ครับ */
 }
 
 #sceneList .scenes {
@@ -987,4 +987,9 @@ body.view-control-buttons .viewControlButton {
   text-shadow: 0 2px 4px rgba(0,0,0,0.8);
   white-space: nowrap;
   font-family: sans-serif;
+}
+
+/* ซ่อนปุ่มหมุนจอและปุ่มเมนู */
+#autorotateToggle, #sceneListToggle {
+  display: none !important;
 }
