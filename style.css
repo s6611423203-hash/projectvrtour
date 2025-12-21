@@ -993,3 +993,31 @@ body.view-control-buttons .viewControlButton {
 #autorotateToggle, #sceneListToggle {
   display: none !important;
 }
+
+/* =========================================
+   อัปเดตใหม่: จัดชิดซ้าย + ลบปุ่มที่ไม่ใช้
+   ========================================= */
+
+/* 1. สั่งให้รายการภาพ ชิดซ้าย และเต็มจอ */
+#sceneList {
+  justify-content: flex-start !important; /* บังคับชิดซ้าย */
+  padding-left: 10px; /* เว้นขอบซ้ายนิดนึงไม่ให้เบียดเกินไป */
+}
+
+/* 2. ลบการเว้นวรรคด้านซ้าย (ตัวปัญหาหลัก) */
+#sceneList.enabled {
+  margin-left: 0 !important; /* ของเดิมเป็น 220px ทำให้มันร่นไปขวา */
+  width: 100% !important;
+}
+
+/* 3. ซ่อนปุ่ม Play (หมุนจอ) และ ปุ่ม Expand (เมนู) */
+#autorotateToggle, 
+#sceneListToggle {
+  display: none !important;
+}
+
+/* 4. ปรับพื้นหลังแถบด้านล่างให้ดูเนียนตา (เสริม) */
+#sceneList .scenes {
+  width: 100%;
+  background-color: rgba(58,68,84, 0.8); /* สีพื้นหลัง */
+}
