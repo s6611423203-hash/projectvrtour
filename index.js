@@ -150,6 +150,12 @@
   } else {
     document.body.classList.add('fullscreen-disabled');
   }
+  // สั่งให้ดับเบิลคลิกที่หน้าจอ = เต็มจอ/ย่อจอ
+  if (screenfull.enabled) {
+    panoElement.addEventListener('dblclick', function() {
+      screenfull.toggle();
+    });
+  }
 
   // Set handler for scene list toggle.
   sceneListToggleElement.addEventListener('click', toggleSceneList);
