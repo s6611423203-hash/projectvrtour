@@ -43,6 +43,8 @@ a, a:hover, a:active, a:visited {
 }
 
 #titleBar {
+  display: none;  /* ★ เพิ่มบรรทัดนี้ครับ (เพื่อซ่อนแถบ) */
+  
   position: absolute;
   top: 0;
   left: 0;
