@@ -1021,3 +1021,62 @@ body.view-control-buttons .viewControlButton {
   width: 100%;
   background-color: rgba(58,68,84, 0.8); /* สีพื้นหลัง */
 }
+
+/* =========================================
+   สูตรจัด 8 รูป ให้เต็มจอพอดีเป๊ะ (Responsive)
+   ========================================= */
+
+/* 1. ปรับกล่องรวมให้จัดเรียงแบบยืดหยุ่น */
+#sceneList .scenes {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: space-between; /* กระจายให้ทั่ว */
+  gap: 8px;          /* ระยะห่างระหว่างรูปนิดหน่อย */
+  padding: 10px;     /* เว้นขอบรอบๆ */
+}
+
+/* 2. สั่งให้แต่ละรูป "ยืด" กินพื้นที่เท่าๆ กัน */
+#sceneList .scene {
+  flex: 1 !important;        /* ★ พระเอกของงาน: สั่งให้หารพื้นที่เท่ากันอัตโนมัติ */
+  width: auto !important;    /* ยกเลิกการฟิกขนาดเดิม */
+  height: 100px !important;  /* กำหนดความสูงให้ดูเป็นรูปสี่เหลี่ยมสวยๆ (ปรับเลขนี้ได้ถ้าอยากได้ใหญ่ขึ้น) */
+  margin: 0 !important;
+  border-radius: 6px;        /* มุมมนนิดๆ */
+  position: relative !important; /* เพื่อให้ชื่อภาษาไทยลอยอยู่ข้างในกรอบ */
+  overflow: hidden;
+  opacity: 0.85;             /* โปร่งแสงนิดๆ ให้ดูหรู */
+  transition: all 0.3s ease;
+}
+
+/* 3. ปรับรูปข้างในให้เต็มกรอบโดยไม่เบี้ยว */
+#sceneList .scene img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;  /* ตัดส่วนเกินออกอัตโนมัติ รูปจะไม่บี้แบน */
+}
+
+/* 4. ปรับแต่งตอนเอาเมาส์ชี้ หรือรูปที่เลือกอยู่ */
+#sceneList .scene:hover,
+#sceneList .scene.current {
+  opacity: 1;              /* ชัด 100% */
+  transform: scale(1.05);  /* ขยายใหญ่นิดนึงให้รู้ว่าเลือกอยู่ */
+  border: 2px solid #fff;  /* มีขอบขาวสวยๆ */
+  z-index: 10;             /* ลอยเด่นขึ้นมา */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+/* 5. ปรับความสูงของแถบดำรองหลังให้พอดีกับรูป */
+#sceneList {
+  height: 140px !important; /* สูงกว่ารูปนิดหน่อย (100px + padding) */
+  background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.0)) !important; /* ไล่สีพื้นหลังให้ดูแพง */
+  align-items: center;      /* จัดให้อยู่กลางแนวตั้ง */
+}
+
+/* 6. ปรับตำแหน่งชื่อภาษาไทย (ถ้ามี) */
+#sceneList .scene .text {
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.6); /* พื้นหลังดำจางๆ ตรงชื่อ */
+  font-size: 14px;
+  padding: 2px 0;
+}
