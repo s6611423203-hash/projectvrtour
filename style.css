@@ -1023,60 +1023,79 @@ body.view-control-buttons .viewControlButton {
 }
 
 /* =========================================
-   สูตรจัด 8 รูป ให้เต็มจอพอดีเป๊ะ (Responsive)
+   สไตล์แถบเมนูด้านล่าง (แบบเหมือนรูปตัวอย่าง)
    ========================================= */
 
-/* 1. ปรับกล่องรวมให้จัดเรียงแบบยืดหยุ่น */
+/* 1. แถบพื้นหลังสีดำคาดด้านล่าง */
+#sceneList {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;              /* ความสูงรวมของแถบดำ */
+  background-color: rgba(0, 0, 0, 0.85); /* สีดำโปร่งแสงนิดๆ (เหมือนตัวอย่าง) */
+  display: flex;
+  align-items: center;        /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+  overflow-x: auto;           /* ถ้าจอเล็ก ให้เลื่อนซ้ายขวาได้ */
+  overflow-y: hidden;
+  z-index: 1000;
+  padding: 0 10px;            /* เว้นขอบซ้ายขวานิดหน่อย */
+}
+
+/* 2. กล่องรวมรูปภาพ */
 #sceneList .scenes {
-  width: 100% !important;
-  display: flex !important;
-  justify-content: space-between; /* กระจายให้ทั่ว */
-  gap: 8px;          /* ระยะห่างระหว่างรูปนิดหน่อย */
-  padding: 10px;     /* เว้นขอบรอบๆ */
+  display: flex;
+  justify-content: center;    /* จัดให้อยู่ตรงกลางจอ (ถ้ามีรูปน้อย) */
+  /* justify-content: flex-start;  <-- ถ้ามีรูปเยอะจนล้นจอ ให้เปิดตัวนี้แทนครับ */
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  gap: 10px;                  /* ระยะห่างระหว่างรูป */
 }
 
-/* 2. สั่งให้แต่ละรูป "ยืด" กินพื้นที่เท่าๆ กัน */
+/* 3. ตัวรูปภาพแต่ละก้อน (Card) */
 #sceneList .scene {
-  flex: 1 !important;        /* ★ พระเอกของงาน: สั่งให้หารพื้นที่เท่ากันอัตโนมัติ */
-  width: auto !important;    /* ยกเลิกการฟิกขนาดเดิม */
-  height: 100px !important;  /* กำหนดความสูงให้ดูเป็นรูปสี่เหลี่ยมสวยๆ (ปรับเลขนี้ได้ถ้าอยากได้ใหญ่ขึ้น) */
-  margin: 0 !important;
-  border-radius: 6px;        /* มุมมนนิดๆ */
-  position: relative !important; /* เพื่อให้ชื่อภาษาไทยลอยอยู่ข้างในกรอบ */
+  display: block;
+  position: relative;         /* เพื่อให้วางชื่อซ้อนทับได้ */
+  width: 140px;               /* ความกว้างรูป (ปรับได้) */
+  height: 90px;               /* ความสูงรูป (ปรับได้) */
+  border-radius: 4px;         /* มุมมนนิดๆ */
   overflow: hidden;
-  opacity: 0.85;             /* โปร่งแสงนิดๆ ให้ดูหรู */
-  transition: all 0.3s ease;
+  flex-shrink: 0;             /* ห้ามย่อรูป ให้คงขนาดไว้เสมอ */
+  border: 2px solid transparent; /* เตรียมขอบไว้สำหรับตอนเมาส์ชี้ */
+  transition: all 0.2s ease;
+  cursor: pointer;
+  opacity: 0.8;               /* ปกติให้จางนิดนึง */
 }
 
-/* 3. ปรับรูปข้างในให้เต็มกรอบโดยไม่เบี้ยว */
+/* 4. รูปภาพข้างใน */
 #sceneList .scene img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;  /* ตัดส่วนเกินออกอัตโนมัติ รูปจะไม่บี้แบน */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* บังคับให้รูปเต็มกรอบโดยสัดส่วนไม่เพี้ยน */
 }
 
-/* 4. ปรับแต่งตอนเอาเมาส์ชี้ หรือรูปที่เลือกอยู่ */
+/* 5. แถบชื่อด้านล่าง (Text Overlay) */
+#sceneList .scene .text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 4px 0;
+  background-color: rgba(0, 0, 0, 0.6); /* พื้นหลังดำจางๆ ตรงตัวหนังสือ */
+  color: #fff;
+  font-size: 12px;            /* ขนาดตัวหนังสือ */
+  font-family: sans-serif;
+  text-align: center;
+  white-space: nowrap;        /* ห้ามตัดบรรทัด */
+  overflow: hidden;
+  text-overflow: ellipsis;    /* ถ้าชื่อยาวเกินให้เป็น ... */
+}
+
+/* 6. เอฟเฟกต์ตอนเอาเมาส์ชี้ หรือรูปที่เลือกอยู่ */
 #sceneList .scene:hover,
 #sceneList .scene.current {
-  opacity: 1;              /* ชัด 100% */
-  transform: scale(1.05);  /* ขยายใหญ่นิดนึงให้รู้ว่าเลือกอยู่ */
-  border: 2px solid #fff;  /* มีขอบขาวสวยๆ */
-  z-index: 10;             /* ลอยเด่นขึ้นมา */
-  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-}
-
-/* 5. ปรับความสูงของแถบดำรองหลังให้พอดีกับรูป */
-#sceneList {
-  height: 140px !important; /* สูงกว่ารูปนิดหน่อย (100px + padding) */
-  background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.0)) !important; /* ไล่สีพื้นหลังให้ดูแพง */
-  align-items: center;      /* จัดให้อยู่กลางแนวตั้ง */
-}
-
-/* 6. ปรับตำแหน่งชื่อภาษาไทย (ถ้ามี) */
-#sceneList .scene .text {
-  bottom: 0;
-  width: 100%;
-  background: rgba(0,0,0,0.6); /* พื้นหลังดำจางๆ ตรงชื่อ */
-  font-size: 14px;
-  padding: 2px 0;
+  opacity: 1;                 /* ชัดขึ้น */
+  border: 2px solid #fff;     /* มีขอบสีขาว */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* เรืองแสงนิดๆ */
 }
