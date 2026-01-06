@@ -955,8 +955,8 @@ body.view-control-buttons .viewControlButton {
 .video-hotspot {
   width: auto;
   height: auto;
-  margin-left: -25px;
-  margin-top: -25px;
+  margin-left: -35px;
+  margin-top: -35px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -970,12 +970,12 @@ body.view-control-buttons .viewControlButton {
 }
 
 .video-hotspot img {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   background-color: #00adef; /* สีฟ้า */
   border: 2px solid #fff;
   border-radius: 50%;
-  padding: 10px; /* ปรับขนาดไอคอนข้างใน */
+  padding: 5px; /* ปรับขนาดไอคอนข้างใน */
   margin-bottom: 5px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
