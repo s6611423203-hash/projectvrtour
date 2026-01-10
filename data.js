@@ -141,7 +141,17 @@ var APP_DATA = {
         { "yaw": -2.92995584984946, "pitch": -0.02999441604033848, "rotation": 0, "target": "5-p6" },
         { "yaw": -0.035166828197709776, "pitch": 0.029865950551354103, "rotation": 0, "target": "7-p8" }
       ],
-      "infoHotspots": []
+      "infoHotspots": [],
+      "audioHotspots": [
+        // --- ปุ่มที่ 1: Thai Version (ค่าใหม่) ---
+        {
+          "yaw": -1.7222443961222886,
+          "pitch": -0.08701829820829943,
+          "path": "audio/สัป.wav",       // อย่าลืมเช็คชื่อไฟล์เสียงให้ตรงนะครับ
+          "label": "รูปปั้นสัปปะรด",
+          "extraClass": "audiothai-hotspot"
+        }
+      ]
     },
     {
       "id": "7-p8",
@@ -868,7 +878,17 @@ var APP_DATA = {
           "target": "35-p15"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [],
+      "audioHotspots": [
+        // --- ปุ่มที่ 1: Thai Version (ค่าใหม่) ---
+        {
+          "yaw": 0.5068443548166108,
+          "pitch": 0.07918789942948123,
+          "path": "audio/จุดที่5.wav",       // อย่าลืมเช็คชื่อไฟล์เสียงให้ตรงนะครับ
+          "label": "จุดไหว้ที่5",
+          "extraClass": "audiothai-hotspot"
+        }
+      ]
     },
     {
       "id": "37-p16",
@@ -938,7 +958,17 @@ var APP_DATA = {
           "target": "40-p17l"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [],
+      "audioHotspots": [
+        // --- ปุ่มที่ 1: Thai Version (ค่าใหม่) ---
+        {
+          "yaw": 0.44272601813418255,
+          "pitch": -0.13215588179720328,
+          "path": "audio/จุดที่1.wav",       // อย่าลืมเช็คชื่อไฟล์เสียงให้ตรงนะครับ
+          "label": "จุดไหว้ที่1",
+          "extraClass": "audiothai-hotspot"
+        }
+      ]
     },
     {
       "id": "39-p17c1",
@@ -1246,7 +1276,17 @@ var APP_DATA = {
           "target": "47-p18l3"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [],
+      "audioHotspots": [
+        // --- ปุ่มที่ 1: Thai Version (ค่าใหม่) ---
+        {
+          "yaw": 0.5028632647937314,
+          "pitch": 0.15045885293315386,
+          "path": "audio/จุดที่3.wav",       // อย่าลืมเช็คชื่อไฟล์เสียงให้ตรงนะครับ
+          "label": "จุดไหว้ที่3",
+          "extraClass": "audiothai-hotspot"
+        }
+      ]
     },
     {
       "id": "46-p18l2",
@@ -1354,7 +1394,17 @@ var APP_DATA = {
           "target": "46-p18l2"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [],
+      "audioHotspots": [
+        // --- ปุ่มที่ 1: Thai Version (ค่าใหม่) ---
+        {
+          "yaw": 0.4171149642493166,
+          "pitch": 0.23107279814437476,
+          "path": "audio/จุดที่4.wav",       // อย่าลืมเช็คชื่อไฟล์เสียงให้ตรงนะครับ
+          "label": "จุดไหว้ที่4",
+          "extraClass": "audiothai-hotspot"
+        }
+      ]
     },
     {
       "id": "49-p18l5",
@@ -1592,7 +1642,17 @@ var APP_DATA = {
           "target": "54-p18r3"
         }
       ],
-      "infoHotspots": []
+      "infoHotspots": [],
+      "audioHotspots": [
+        // --- ปุ่มที่ 1: Thai Version (ค่าใหม่) ---
+        {
+          "yaw": 0.4754983480275641,
+          "pitch": 0.17165860804669641,
+          "path": "audio/จุดที่2.wav",       // อย่าลืมเช็คชื่อไฟล์เสียงให้ตรงนะครับ
+          "label": "จุดไหว้ที่2",
+          "extraClass": "audiothai-hotspot"
+        }
+      ]
     },
     {
       "id": "54-p18r3",
