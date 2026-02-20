@@ -526,4 +526,52 @@ window.closeVideo = function() {
     return wrapper;
   }
 
+  // 1. ฟังก์ชันอัปเดตการหมุนของ Radar
+function updateRadar() {
+  var view = viewer.view();
+  var yaw = view.yaw();
+  // แปลงค่าพิกัดพานอราม่า เป็นองศา (Marzipano ใช้ radians)
+  var degrees = yaw * (180 / Math.PI);
+  
+  var radar = document.getElementById('radar-icon');
+  if (radar) {
+    radar.style.transform = 'rotate(' + degrees + 'deg)';
+  }
+}
+
+// 2. สั่งให้ทำงานทุกครั้งที่มีการเปลี่ยนมุมมอง (View Change)
+viewer.addEventListener('viewChange', updateRadar);
+
+// 3. ปรับปรุงฟังก์ชัน switchScene เดิมของคุณ (เพิ่มการเลื่อนจุด Active)
+function switchScene(scene) {
+  // ... โค้ดหยุดเสียง/เปลี่ยนฉากเดิมที่คุณมี ...
+  
+  // เพิ่ม: อัปเดตสถานะจุดบนแผนที่
+  document.querySelectorAll('.map-dot').forEach(function(dot) {
+    if (dot.getAttribute('data-id') === scene.data.id) {
+      dot.classList.add('active');
+      // เลื่อนตำแหน่ง Radar ไปยังจุดใหม่ (ต้องเก็บพิกัด x,y ไว้ใน data.js หรือกำหนดเอง)
+      var radar = document.getElementById('radar-icon');
+      radar.style.top = dot.style.top;
+      radar.style.left = dot.style.left;
+    } else {
+      dot.classList.remove('active');
+    }
+  });
+
+  stopAutorotate();
+  scene.view.setParameters(scene.data.initialViewParameters);
+  scene.scene.switchTo();
+  // ...
+}
+
+// 4. ทำให้จุดบนแผนที่คลิกได้
+document.querySelectorAll('.map-dot').forEach(function(dot) {
+  dot.addEventListener('click', function() {
+    var id = this.getAttribute('data-id');
+    var targetScene = findSceneById(id);
+    if (targetScene) switchScene(targetScene);
+  });
+});
+
 })(); 
