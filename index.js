@@ -544,20 +544,42 @@ viewer.addEventListener('viewChange', updateRadar);
 
 // 3. ปรับปรุงฟังก์ชัน switchScene เดิมของคุณ (เพิ่มการเลื่อนจุด Active)
 function switchScene(scene) {
-  // ... โค้ดหยุดเสียง/เปลี่ยนฉากเดิมที่คุณมี ...
-  
-  // เพิ่ม: อัปเดตสถานะจุดบนแผนที่
-  document.querySelectorAll('.map-dot').forEach(function(dot) {
+  // --- 1. โค้ดเดิมของคุณ (หยุดเสียง / เปลี่ยนฉาก) ---
+  if (typeof currentAudio !== 'undefined' && currentAudio) {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+  }
+  stopAutorotate();
+  scene.view.setParameters(scene.data.initialViewParameters);
+  scene.scene.switchTo();
+  startAutorotate();
+  updateSceneName(scene);
+  updateSceneList(scene);
+
+  // --- 2. ส่วนที่เพิ่มใหม่: สั่งให้จุดบนแผนที่และ Radar ขยับตาม ---
+  var dots = document.querySelectorAll('.map-dot');
+  var radar = document.getElementById('radar-icon');
+
+  dots.forEach(function(dot) {
     if (dot.getAttribute('data-id') === scene.data.id) {
-      dot.classList.add('active');
-      // เลื่อนตำแหน่ง Radar ไปยังจุดใหม่ (ต้องเก็บพิกัด x,y ไว้ใน data.js หรือกำหนดเอง)
-      var radar = document.getElementById('radar-icon');
-      radar.style.top = dot.style.top;
-      radar.style.left = dot.style.left;
+      dot.classList.add('active'); // ทำให้จุดที่เลือกเป็นสีฟ้า
+      
+      // สั่งให้ตัว Radar วิ่งไปทับจุดที่เลือก (รูปจะขยับตามจุดแล้ว!)
+      if (radar) {
+        radar.style.top = dot.style.top;
+        radar.style.left = dot.style.left;
+        radar.style.display = 'block'; // โชว์ Radar
+      }
     } else {
-      dot.classList.remove('active');
+      dot.classList.remove('active'); // จุดอื่นให้เป็นสีขาวปกติ
     }
   });
+  
+  // ถ้าฉากไหนไม่มีจุดในแผนที่ ให้ซ่อน Radar
+  var activeDot = document.querySelector('.map-dot.active');
+  if (!activeDot && radar) {
+    radar.style.display = 'none';
+  }
 
   stopAutorotate();
   scene.view.setParameters(scene.data.initialViewParameters);
