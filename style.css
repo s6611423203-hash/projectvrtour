@@ -1032,53 +1032,36 @@ body.view-control-buttons .viewControlButton {
   border: 2px solid #fff;     /* มีขอบสีขาว */
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* เรืองแสงนิดๆ */
 }
-#custom-web-icon {
-  position: absolute;
-  right: 20px;          /* ห่างจากขอบขวา 20px */
-  bottom: 130px;        /* ลอยอยู่เหนือแถบ Scene List (120px + 10px) */
-  width: 55px;          /* ขนาดไอคอน ปรับได้ตามความชอบ */
+
+#fixed-web-icon {
+  position: fixed;      /* ล็อกตำแหน่งกับหน้าจอ */
+  right: 20px;          /* ห่างขอบขวา */
+  bottom: 135px;        /* ลอยเหนือ Scene List (120px + 15px) */
+  width: 55px;
   height: 55px;
-  z-index: 2000;        /* มั่นใจว่าอยู่หน้าสุด */
+  z-index: 999999;      /* ใส่เลขเยอะๆ ให้มั่นใจว่าอยู่หน้าสุด */
   cursor: pointer;
-  transition: transform 0.2s ease; /* เพิ่มลูกเล่นตอนชี้ */
+  transition: transform 0.2s ease;
+  display: block !important; /* บังคับให้แสดงผล */
 }
 
-#custom-web-icon img {
+#fixed-web-icon img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  /* เพิ่มเงาให้ไอคอนดูนูนออกมาจากภาพพานอราม่า */
-  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4)); 
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.5)); /* เพิ่มเงาให้ดูมีมิติ */
 }
 
-/* เอฟเฟกต์ตอนเอาเมาส์ไปชี้ */
-#custom-web-icon:hover {
-  transform: scale(1.1); /* ขยายใหญ่ขึ้น 10% */
+#fixed-web-icon:hover {
+  transform: scale(1.1); /* ขยายเมื่อเอาเมาส์ชี้ */
 }
 
-/* สำหรับการแสดงผลบนมือถือ */
+/* ปรับตำแหน่งสำหรับมือถือ */
 @media (max-width: 600px) {
-  #custom-web-icon {
+  #fixed-web-icon {
     width: 45px;
     height: 45px;
-    bottom: 110px; /* ปรับลดลงตามขนาดจอ */
-    right: 10px;
+    bottom: 110px; /* ลดลงมาหน่อยให้เหมาะกับจอเล็ก */
+    right: 15px;
   }
-}
-#web-link-icon {
-    display: block !important;    /* บังคับให้โชว์ตลอดเวลา */
-    position: absolute !important;
-    right: 20px !important;       /* ห่างจากขอบขวา */
-    bottom: 135px !important;      /* อยู่เหนือ Scene List (120px + 15px) */
-    width: 60px !important;        /* ขนาดไอคอน */
-    height: 60px !important;
-    z-index: 99999 !important;     /* ให้อยู่ชั้นบนสุด */
-    visibility: visible !important; /* ป้องกันการใช้คำสั่ง hidden */
-    opacity: 1 !important;         /* ป้องกันการใช้คำสั่งจางหาย */
-}
-
-#web-link-icon img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: contain !important;
 }
