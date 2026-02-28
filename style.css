@@ -1065,3 +1065,20 @@ body.view-control-buttons .viewControlButton {
     right: 10px;
   }
 }
+#web-link-icon {
+    display: block !important;    /* บังคับให้โชว์ตลอดเวลา */
+    position: absolute !important;
+    right: 20px !important;       /* ห่างจากขอบขวา */
+    bottom: 135px !important;      /* อยู่เหนือ Scene List (120px + 15px) */
+    width: 60px !important;        /* ขนาดไอคอน */
+    height: 60px !important;
+    z-index: 99999 !important;     /* ให้อยู่ชั้นบนสุด */
+    visibility: visible !important; /* ป้องกันการใช้คำสั่ง hidden */
+    opacity: 1 !important;         /* ป้องกันการใช้คำสั่งจางหาย */
+}
+
+#web-link-icon img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+}
