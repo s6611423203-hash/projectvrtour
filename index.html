@@ -107,12 +107,88 @@
 <script src="vendor/screenfull.min.js" ></script>
 <script src="vendor/bowser.min.js" ></script>
 <script src="vendor/marzipano.js" ></script>
-
 <script src="data.js"></script>
 <script src="index.js"></script>
 <script src="audio-warp-tab.js"></script> 
-<script src="vendor/screenfull.min.js"></script>
 
+
+<div id="audioNav">
+  <button id="audioNavToggle" onclick="toggleAudioNav()">
+    <span class="icon-wrap">🔊</span>
+    <span class="label-text">จุดเสียง</span>
+    <span id="audioNavArrow" class="arrow">▲</span>
+  </button>
+
+  <div id="audioNavList">
+    <div class="audio-nav-header">เลือกจุดที่มีข้อมูลเสียง</div>
+    <div class="audio-nav-items">
+
+      <div class="audio-nav-item" onclick="warpToAudioScene('6-p7')">
+        <div class="item-icon">🎵</div>
+        <div class="item-info">
+          <div class="item-name">รูปปั้นสัปปะรด</div>
+          <div class="item-sub">ซอยวิหาร</div>
+        </div>
+        <div class="item-arrow">→</div>
+      </div>
+
+      <div class="audio-nav-item bilingual" onclick="warpToAudioScene('29-p12')">
+        <div class="item-icon">🔊</div>
+        <div class="item-info">
+          <div class="item-name">หน้าศาลเจ้า</div>
+          <div class="item-sub">🇹🇭 ภาษาไทย &amp; 🇬🇧 English</div>
+        </div>
+        <div class="item-arrow">→</div>
+      </div>
+
+      <div class="audio-nav-item" onclick="warpToAudioScene('38-p17c')">
+        <div class="item-icon">🎵</div>
+        <div class="item-info">
+          <div class="item-name">จุดไหว้ที่ 1</div>
+          <div class="item-sub">ลานพิธีกรรม</div>
+        </div>
+        <div class="item-arrow">→</div>
+      </div>
+
+      <div class="audio-nav-item" onclick="warpToAudioScene('53-p18r2')">
+        <div class="item-icon">🎵</div>
+        <div class="item-info">
+          <div class="item-name">จุดไหว้ที่ 2</div>
+          <div class="item-sub">ลานพิธีกรรม</div>
+        </div>
+        <div class="item-arrow">→</div>
+      </div>
+
+      <div class="audio-nav-item" onclick="warpToAudioScene('45-p18l1')">
+        <div class="item-icon">🎵</div>
+        <div class="item-info">
+          <div class="item-name">จุดไหว้ที่ 3</div>
+          <div class="item-sub">ลานพิธีกรรม</div>
+        </div>
+        <div class="item-arrow">→</div>
+      </div>
+
+      <div class="audio-nav-item" onclick="warpToAudioScene('48-p18l4')">
+        <div class="item-icon">🎵</div>
+        <div class="item-info">
+          <div class="item-name">จุดไหว้ที่ 4</div>
+          <div class="item-sub">ลานพิธีกรรม</div>
+        </div>
+        <div class="item-arrow">→</div>
+      </div>
+
+      <div class="audio-nav-item" onclick="warpToAudioScene('36-p15f')">
+        <div class="item-icon">🎵</div>
+        <div class="item-info">
+          <div class="item-name">จุดไหว้ที่ 5</div>
+          <div class="item-sub">ลานพิธีกรรม</div>
+        </div>
+        <div class="item-arrow">→</div>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 <!-- Video Popup Overlay -->
 <div id="videoPopup">
