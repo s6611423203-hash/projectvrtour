@@ -1070,7 +1070,7 @@ body.view-control-buttons .viewControlButton {
 /* ---- Audio Nav Panel ---- */
 #audioNav {
   position: fixed;
-  bottom: 120px; /* อยู่เหนือ scene list */
+  top: 0;        /* ขวาบน */
   right: 0;
   z-index: 2000;
   display: flex;
@@ -1110,10 +1110,12 @@ body.view-control-buttons .viewControlButton {
   font-size: 11px;
   margin-left: 2px;
   transition: transform 0.3s;
+  display: inline-block;
+  transform: rotate(180deg);
 }
 
 #audioNavToggle.open .arrow {
-  transform: rotate(180deg);
+  transform: rotate(0deg);
 }
 
 /* รายการ Panel */
@@ -1264,7 +1266,7 @@ body.view-control-buttons .viewControlButton {
 /* ---- mobile ---- */
 @media (max-width: 500px) {
   #audioNav {
-    bottom: 130px;
+    top: 0;
   }
 
   #audioNavToggle {
