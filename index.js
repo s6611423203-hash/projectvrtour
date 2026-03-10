@@ -418,6 +418,11 @@ function switchScene(scene) {
   }
 
   // Display the initial scene.
+   // ★ Expose สำหรับ audio warp tab
+  window.__warpToScene = function(id) {
+    var scene = findSceneById(id);
+    if (scene) switchScene(scene);
+  };
   var startScene = findSceneById('29-p12');
   switchScene(startScene ? startScene : scenes[0]);
 
