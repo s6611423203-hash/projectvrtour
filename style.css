@@ -892,12 +892,13 @@ body.view-control-buttons .viewControlButton {
 .audio-hotspot img {
   width: 70px;            /* ขนาดวงกลม */
   height: 70px;
-  background-color: #00adef; /* สีฟ้า */
-  border: 2px solid #fff;
+  background-color: transparent;
+  border: none;
   border-radius: 50%;
   padding: 12px;
   margin-bottom: 5px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  box-shadow:none;
+  filter: drop-shadow(0 2px rgba(0,0,0,0.6));
 }
 
 .audio-label {
@@ -937,12 +938,13 @@ body.view-control-buttons .viewControlButton {
 .video-hotspot img {
   width: 70px;
   height: 70px;
-  background-color: #00adef; /* สีฟ้า */
-  border: 2px solid #fff;
+  background-color: transparent ;
+  border: none;
   border-radius: 50%;
-  padding: 5px; /* ปรับขนาดไอคอนข้างใน */
+  padding: 12px; /* ปรับขนาดไอคอนข้างใน */
   margin-bottom: 5px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  box-shadow: none;
+  filter: drop-shadow(0 2px rgba (0,0,0,0.6));
 }
 
 .video-label {
