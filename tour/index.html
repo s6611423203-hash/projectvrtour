@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" type="image/png" href="img/Logoproject.png">
+<title>Virtual Tour of Tha Ruea Shrine</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano">
+  <a href="" target="_blank" id="fixed-web-icon">
+    <img src="img/website.png" alt="Website">
+  </a></div>
+
+<div id="sceneList">
+  <div class="scenes">
+    
+    <a href="javascript:void(0)" class="scene" data-id="0-p1">
+      <img src="tiles/0-p1/thumb.jpg" alt="หน้าพิธีลุยไฟ">
+ 
+      <div class="text">หน้าพิธีลุยไฟ</div>
+    </a>
+
+    <a href="javascript:void(0)" class="scene" data-id="29-p12">
+      <img src="tiles/29-p12/thumb.jpg" alt="หน้าศาลเจ้า">
+      <div class="text">หน้าศาลเจ้า</div>
+
+    </a>
+
+    <a href="javascript:void(0)" class="scene" data-id="38-p17c">
+      <img src="tiles/38-p17c/thumb.jpg" alt="จุดไหว้1">  
+      <div class="text">จุดไหว้1</div>
+    </a>
+
+    <a href="javascript:void(0)" class="scene" data-id="53-p18r2">
+      <img src="tiles/53-p18r2/thumb.jpg" alt="จุดไหว้2"> 
+      <div class="text">จุดไหว้2</div>
+    </a>
+
+    <a href="javascript:void(0)" class="scene" data-id="45-p18l1">
+      <img src="tiles/45-p18l1/thumb.jpg" alt="จุดไหว้3"> 
+      <div class="text">จุดไหว้3</div>
+    </a>
+
+    <a href="javascript:void(0)" class="scene" data-id="48-p18l4">
+      <img src="tiles/48-p18l4/thumb.jpg" alt="จุดไหว้4"> 
+      <div class="text">จุดไหว้4</div>
+    </a>
+
+    <a href="javascript:void(0)" class="scene" data-id="36-p15f">
+      <img src="tiles/36-p15f/thumb.jpg" alt="จุดไหว้5">  
+      <div class="text">จุดไหว้5</div>
+    </a>
+
+    <a href="javascript:void(0)" class="scene" data-id="10-p9v2">
+      <img src="tiles/10-p9v2/thumb.jpg" alt="จุดรับบริจาค">
+      <div class="text">จุดรับบริจาค</div>      
+    </a>
+
+  </div>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+<script src="data.js"></script>
+<script src="index.js"></script>
+<script src="audio-warp-tab.js"></script> 
+
+
+<div id="audioNav">
+  <button id="audioNavToggle" onclick="toggleAudioNav()">
+    <span class="icon-wrap">🔊</span>
+    <span class="label-text">จุดเสียง</span>
+    <span id="audioNavArrow" class="arrow">▲</span>
+  </button>
+
+  <div id="audioNavList">
+    <div class="audio-nav-header">เลือกจุดที่มีข้อมูลเสียง</div>
+    <div class="audio-nav-items">
+
+      <div class="audio-nav-item" onclick="warpToAudioScene('6-p7')">
+        <div class="item-icon">🎵</div>
+        <div class="item-info">
+          <div class="item-name">รูปปั้นสัปปะรด</div>
+          <div class="item-sub">ซอยวิหาร</div>
+        </div>
+        <div class="item-arrow">→</div>
+      </div>
+
+      <div class="audio-nav-item bilingual" onclick="warpToAudioScene('29-p12')">
+        <div class="item-icon">🔊</div>
+        <div class="item-info">
+          <div class="item-name">หน้าศาลเจ้า</div>
+          <div class="item-sub">🇹🇭 ภาษาไทย &amp; 🇬🇧 English</div>
+        </div>
+        <div class="item-arrow">→</div>
+      </div>
+
+      <div class="audio-nav-item" onclick="warpToAudioScene('38-p17c')">
+        <div class="item-icon">🎵</div>
+        <div class="item-info">
+          <div class="item-name">จุดไหว้ที่ 1</div>
+          <div class="item-sub">ลานพิธีกรรม</div>
+        </div>
+        <div class="item-arrow">→</div>
+      </div>
+
+      <div class="audio-nav-item" onclick="warpToAudioScene('53-p18r2')">
+        <div class="item-icon">🎵</div>
+        <div class="item-info">
+          <div class="item-name">จุดไหว้ที่ 2</div>
+          <div class="item-sub">ลานพิธีกรรม</div>
+        </div>
+        <div class="item-arrow">→</div>
+      </div>
+
+      <div class="audio-nav-item" onclick="warpToAudioScene('45-p18l1')">
+        <div class="item-icon">🎵</div>
+        <div class="item-info">
+          <div class="item-name">จุดไหว้ที่ 3</div>
+          <div class="item-sub">ลานพิธีกรรม</div>
+        </div>
+        <div class="item-arrow">→</div>
+      </div>
+
+      <div class="audio-nav-item" onclick="warpToAudioScene('48-p18l4')">
+        <div class="item-icon">🎵</div>
+        <div class="item-info">
+          <div class="item-name">จุดไหว้ที่ 4</div>
+          <div class="item-sub">ลานพิธีกรรม</div>
+        </div>
+        <div class="item-arrow">→</div>
+      </div>
+
+      <div class="audio-nav-item" onclick="warpToAudioScene('36-p15f')">
+        <div class="item-icon">🎵</div>
+        <div class="item-info">
+          <div class="item-name">จุดไหว้ที่ 5</div>
+          <div class="item-sub">ลานพิธีกรรม</div>
+        </div>
+        <div class="item-arrow">→</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Video Popup Overlay -->
+<div id="videoPopup">
+  <div id="videoPopupClose" onclick="closeVideo()">✖ ปิด</div>
+  <iframe 
+    id="videoFrame"
+    src=""
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+  
+</body>
+</html>
